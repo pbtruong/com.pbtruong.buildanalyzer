@@ -3,7 +3,7 @@
 Editor tool to see what goes into a build and how much each thing costs.
 Open it from **Window > Analysis > Build Analyzer**.
 
-No runtime code, no dependency on game code. Addressables support is optional: it compiles only when
+Supports Unity 2022.3+ and Unity 6. No runtime code, no dependency on game code. Addressables support is optional: it compiles only when
 `com.unity.addressables` 1.21+ is installed.
 
 ## Installation
@@ -11,14 +11,14 @@ No runtime code, no dependency on game code. Addressables support is optional: i
 Add to `Packages/manifest.json`:
 
 ```json
-"com.pbtruong.buildanalyzer": "git@github.com:pbtruong/com.pbtruong.buildanalyzer.git#0.2.1"
+"com.pbtruong.buildanalyzer": "git@github.com:pbtruong/com.pbtruong.buildanalyzer.git#0.2.2"
 ```
 
 ## Data sources
 
 | Source | Where it comes from | How to get it |
 | --- | --- | --- |
-| Player build | `Library/LastBuild.buildreport` (`BuildReport.GetLatestReport()`) | Any player build |
+| Player build | `Library/LastBuild.buildreport` (`BuildReport.GetLatestReport()` on Unity 6) | Any player build |
 | Addressables | `Library/com.unity.addressables/BuildReports/buildlayout_*.json` | Enable *Generate Build Layout* (toolbar Addressables menu or Edit > Preferences > Addressables), then build content |
 
 Asset sizes are the uncompressed data written into the build. Bundle "On Disk" sizes are the real compressed file sizes.

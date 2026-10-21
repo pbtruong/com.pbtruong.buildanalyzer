@@ -1,6 +1,6 @@
 {
   "name": "com.pbtruong.buildanalyzer",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "displayName": "PBTruong Build Analyzer",
   "description": "Editor tool to inspect what goes into a build: player BuildReport assets, Addressables bundles (build layout), duplicate detection, optimization insights, snapshot comparison, asset usage lookup and batch texture compression.",
   "unity": "2022.3",

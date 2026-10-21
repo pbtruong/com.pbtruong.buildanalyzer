@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.2] - 2026-10-21
+
+### Added
+- Unity 2022.3 support (also Addressables 1.21+ on 2022.3).
+
 ## [0.2.1] - 2026-10-15
 
 ### Changed
