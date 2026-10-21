@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+*.DotSettings.user
+
+# Visual Studio
+.vs/
+
+# Auto-generated solution and project files
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+
+# Unity auto-generated debug database meta files (NOT regular .meta files — those must be committed)
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Node (if using any JS tooling)
+node_modules/

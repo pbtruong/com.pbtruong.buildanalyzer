@@ -1,0 +1,24 @@
+{
+    "name": "PBTruong.BuildAnalyzer.Editor.Tests",
+    "rootNamespace": "PBTruong.BuildAnalyzer.Editor.Tests",
+    "references": [
+        "PBTruong.BuildAnalyzer.Editor",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

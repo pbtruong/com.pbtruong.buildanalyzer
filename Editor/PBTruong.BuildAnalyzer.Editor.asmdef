@@ -1,0 +1,16 @@
+{
+    "name": "PBTruong.BuildAnalyzer.Editor",
+    "rootNamespace": "PBTruong.BuildAnalyzer.Editor",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
