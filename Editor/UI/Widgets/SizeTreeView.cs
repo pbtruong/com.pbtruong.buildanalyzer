@@ -31,7 +31,11 @@ namespace PBTruong.BuildAnalyzer.Editor
 
             _tree = new MultiColumnTreeView
             {
+#if UNITY_2023_2_OR_NEWER
                 sortingMode = ColumnSortingMode.Custom,
+#else
+                sortingEnabled = true,
+#endif
                 selectionType = SelectionType.Single,
                 showAlternatingRowBackgrounds = AlternatingRowBackground.ContentOnly,
                 fixedItemHeight = 20,

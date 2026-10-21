@@ -14,15 +14,22 @@ namespace PBTruong.BuildAnalyzer.Editor
 
         public static PlayerBuildData LoadLatest()
         {
+#if UNITY_6000_0_OR_NEWER
             var report = BuildReport.GetLatestReport();
+#else
+            var report = File.Exists(PlayerReportArchive.LatestReportPath) ? ReadReport(PlayerReportArchive.LatestReportPath) : null;
+#endif
             return report == null ? null : Convert(report, LatestLabel);
         }
 
         public static PlayerBuildData LoadFromFile(string path)
         {
-            var report = InternalEditorUtility.LoadSerializedFileAndForget(path).OfType<BuildReport>().FirstOrDefault();
+            var report = ReadReport(path);
             return report == null ? null : Convert(report, Path.GetFileNameWithoutExtension(path));
         }
+
+        private static BuildReport ReadReport(string path) =>
+            InternalEditorUtility.LoadSerializedFileAndForget(path).OfType<BuildReport>().FirstOrDefault();
 
         private static PlayerBuildData Convert(BuildReport report, string label)
         {

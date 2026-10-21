@@ -25,6 +25,11 @@
             "name": "com.unity.addressables",
             "expression": "1.21.0",
             "define": "PBTRUONG_BUILDANALYZER_ADDRESSABLES"
+        },
+        {
+            "name": "com.unity.addressables",
+            "expression": "2.0.0",
+            "define": "PBTRUONG_BUILDANALYZER_ADDRESSABLES_2"
         }
     ],
     "noEngineReferences": false

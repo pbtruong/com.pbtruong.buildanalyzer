@@ -8,7 +8,7 @@ namespace PBTruong.BuildAnalyzer.Editor
 {
     public static class PlayerReportArchive
     {
-        private const string LatestReportPath = "Library/LastBuild.buildreport";
+        internal const string LatestReportPath = "Library/LastBuild.buildreport";
         private const string FolderName = "Player";
         private const string Extension = ".buildreport";
 
